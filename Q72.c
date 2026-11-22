@@ -1,0 +1,32 @@
+Q72: Find the sum of all elements in a matrix.
+
+/*
+Sample Test Cases:
+Input 1:
+2 3
+1 2 3
+4 5 6
+Output 1:
+21
+
+*/
+
+#include <stdio.h>
+
+int main(void) {
+    int rows, cols;
+    scanf("%d %d", &rows, &cols);
+
+    int sum = 0;
+    int value;
+
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            scanf("%d", &value);
+            sum += value;
+        }
+    }
+
+    printf("%d\n", sum);
+    return 0;
+}
